@@ -1,0 +1,45 @@
+$color-dark: #000000;
+$color-light: #fefefe;
+
+:root {
+  --dark-background-hf-color: #212121;
+  --dark-border-hf-color: #010101;
+  --dark-background-main-color: #484848;
+  --dark-text-color: #fefefe;
+  --dark-btn-color: #635b5b;
+  --dark-color-accent: #fda80a;
+
+  --backendless-background-hf-color: #757575;
+  --backendless-border-hf-color: #494949;
+  --backendless-background-main-color: #a4a4a4;
+  --backendless-text-color: #fefefe;
+  --backendless-btn-color: #484848;
+  --backendless-color-accent: #f0be27;
+}
+
+body {
+  --background-hf-color: #b0bec5;
+  --border-hf-color: #808e95;
+  --background-main-color: #e2f1f8;
+  --text-color: #000000;
+  --btn-color: #fefefe;
+  --color-accent: #5e77cc;
+}
+
+body.theme-dark {
+  --background-hf-color: var(--dark-background-hf-color);
+  --border-hf-color: var(--dark-border-hf-color);
+  --background-main-color: var(--dark-background-main-color);
+  --text-color: var(--dark-text-color);
+  --btn-color: var(--dark-btn-color);
+  --color-accent: var(--dark-color-accent);
+}
+
+body.theme-backendless {
+  --background-hf-color: var(--backendless-background-hf-color);
+  --border-hf-color: var(--backendless-border-hf-color);
+  --background-main-color: var(--backendless-background-main-color);
+  --text-color: var(--backendless-text-color);
+  --btn-color: var(--backendless-btn-color);
+  --color-accent: var(--backendless-color-accent);
+}

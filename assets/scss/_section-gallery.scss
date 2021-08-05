@@ -1,0 +1,182 @@
+.gallery {
+  background-color: var(--background-main-color);
+
+  @extend %container;
+  padding-bottom: 100px;
+
+  @include xs-min {
+    padding-top: 50px;
+  }
+
+  @include xs {
+    padding-top: 75px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 9em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid var(--color-accent);
+
+    animation: typing 6s steps(30, end) infinite,
+      blink-caret 1s step-end infinite;
+  }
+
+  &__container {
+    display: grid;
+    margin-top: $gap/2;
+
+    @include lg-min {
+      grid-gap: $gap;
+      grid-template-areas:
+        "a1 a1 a1 a2" "a1 a1 a1 a3" "a1 a1 a1 a4" "a5 a6 a7 a8"
+        "a9 a10 a10 a10" "a11 a10 a10 a10" "a12 a10 a10 a10" "a13 a14 a15 a16"
+        "a17 a17 a17 a18" "a17 a17 a17 a19" "a17 a17 a17 a20" "a21 a22 a23 a24";
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include lg-sm {
+      grid-gap: 15px;
+      grid-template-areas:
+        "a1 a1 a2" "a1 a1 a3"
+        "a4 a4 a5" "a4 a4 a6"
+        "a7 a7 a8" "a7 a7 a9"
+        "a10 a10 a11" "a10 a10 a12"
+        "a13 a13 a14" "a13 a13 a15"
+        "a16 a16 a17" "a16 a16 a18"
+        "a19 a19 a20" "a19 a19 a21"
+        "a22 a22 a23" "a22 a22 a24";
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include sm {
+      grid-gap: $gap/2;
+      grid-template-areas:
+        "a1 a1 a1" "a2 a3 a4"
+        "a5 a5 a5" "a6 a7 a8"
+        "a9 a9 a9" "a10 a11 a12"
+        "a13 a13 a13" "a14 a15 a16"
+        "a17 a17 a17" "a18 a19 a20"
+        "a21 a21 a21" "a22 a23 a24";
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &-item {
+    overflow: hidden;
+    outline: 4px solid transparent;
+    transition: outline 0.3s;
+    @for $i from 1 through 24 {
+      &:nth-of-type(#{$i}) {
+        grid-area: a#{$i};
+      }
+    }
+
+    &:hover {
+      outline: 4px solid var(--color-accent);
+    }
+  }
+
+  &-item__image {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: $color-dark;
+    background-color: rgba($color-dark, 0.9);
+
+    &__content {
+      margin: auto;
+      display: block;
+      max-width: 600px;
+
+      @include sm-min {
+        width: 80%;
+      }
+
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    &__caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      color: $color-light;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    &__content,
+    &_caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: $color-light;
+      font-size: 2.5rem;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover,
+      &:focus {
+        color: var(--color-accent);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 9em;
+  }
+  100% {
+    width: 9em;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-accent);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

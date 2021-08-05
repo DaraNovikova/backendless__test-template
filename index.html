@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/img/bold.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700%7CRoboto:100,300,400,500,700,900"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Backendless Gallery</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-logo"><a class="header-logo__link" href="index.html">Backendless</a></div>
+    <nav class="header-navbar">
+      <div class="header-navbar-radio">
+        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio1"
+          value="light">
+        <label class="header-navbar__label" for="radio1">Light Theme</label>
+      </div>
+      <div class="header-navbar-radio">
+        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio2"
+          value="dark">
+        <label class="header-navbar__label" for="radio2">Dark Theme</label>
+      </div>
+      <div class="header-navbar-radio">
+        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio3"
+          value="backendless">
+        <label class="header-navbar__label" for="radio3">Gray Theme</label>
+      </div>
+
+      <div class="header-navbar-btn">
+        <button onclick="applyTheme(this.value)" value="light">Light Theme</button>
+        <button onclick="applyTheme(this.value)" value="dark">Dark Theme</button>
+        <button onclick="applyTheme(this.value)" value="backendless">Backendless Theme</button>
+      </div>
+
+      <div class="header-navbar-dropdown">
+        <select name="header-dropdown" id="theme">
+          <option value="light">Light Theme</option>
+          <option value="dark">Dark Theme</option>
+          <option value="backendless">Backendless Theme</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="gallery">
+      <h1 class="gallery__title">Backendless Gallery</h1>
+      <div class="gallery__container">
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item__image" src="assets/img/1000x600.png" alt="Image title">
+        </article>
+
+        <div class="gallery-modal" id="modal">
+          <span class="gallery-modal__close">&times;</span>
+          <img class="gallery-modal__content" src="#" id="modal-image" alt="#">
+          <div class="gallery-modal__caption" id="modal-caption"></div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer__contacts">
+        <a href="#">Backendless.com</a>
+        <span>555&nbsp;-555&nbsp;-555</span>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer__social-link"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="footer__social-link"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+        <a href="#" class="footer__social-link"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
