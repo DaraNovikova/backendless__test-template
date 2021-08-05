@@ -146,7 +146,7 @@ button:hover, button:focus {
 }
 .gallery__title {
   margin: 0 auto;
-  width: 9em;
+  width: 9.05em;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.1em solid var(--color-accent);
@@ -306,10 +306,10 @@ button:hover, button:focus {
     width: 0;
   }
   50% {
-    width: 9em;
+    width: 9.05em;
   }
   100% {
-    width: 9em;
+    width: 9.05em;
   }
 }
 
@@ -318,10 +318,10 @@ button:hover, button:focus {
     width: 0;
   }
   50% {
-    width: 9em;
+    width: 9.05em;
   }
   100% {
-    width: 9em;
+    width: 9.05em;
   }
 }
 @-webkit-keyframes blink-caret {
@@ -411,7 +411,7 @@ button:hover, button:focus {
 .footer__social-link:hover {
   color: var(--color-accent);
 }
-@media (min-width: 360px) {
+@media (min-width: 343px) {
   .gallery {
     padding-top: 50px;
   }
@@ -476,7 +476,7 @@ button:hover, button:focus {
   .header-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .header-logo {
     -webkit-box-flex: 1;
@@ -531,12 +531,12 @@ button:hover, button:focus {
     margin-left: 0;
   }
 }
-@media (max-width: 639.8px) and (min-width: 360px) {
+@media (max-width: 639.8px) and (min-width: 343px) {
   h1 {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 359.8px) {
+@media (max-width: 342.8px) {
   h1 {
     font-size: 0.8rem;
   }
