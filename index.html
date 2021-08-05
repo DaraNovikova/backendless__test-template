@@ -17,38 +17,40 @@
 <body>
 
   <header class="header">
-    <div class="header-logo"><a class="header-logo__link" href="index.html">Backendless</a></div>
-    <nav class="header-navbar">
-      <div class="header-navbar-radio">
-        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio1"
-          value="light">
-        <label class="header-navbar__label" for="radio1">Light Theme</label>
-      </div>
-      <div class="header-navbar-radio">
-        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio2"
-          value="dark">
-        <label class="header-navbar__label" for="radio2">Dark Theme</label>
-      </div>
-      <div class="header-navbar-radio">
-        <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio3"
-          value="backendless">
-        <label class="header-navbar__label" for="radio3">Gray Theme</label>
-      </div>
-
-      <div class="header-navbar-btn">
-        <button onclick="applyTheme(this.value)" value="light">Light Theme</button>
-        <button onclick="applyTheme(this.value)" value="dark">Dark Theme</button>
-        <button onclick="applyTheme(this.value)" value="backendless">Backendless Theme</button>
-      </div>
-
-      <div class="header-navbar-dropdown">
-        <select name="header-dropdown" id="theme">
-          <option value="light">Light Theme</option>
-          <option value="dark">Dark Theme</option>
-          <option value="backendless">Backendless Theme</option>
-        </select>
-      </div>
-    </nav>
+    <div class="header-content">
+      <div class="header-logo"><a class="header-logo__link" href="index.html">Backendless</a></div>
+      <nav class="header-navbar">
+        <div class="header-navbar-radio">
+          <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio1"
+            value="light">
+          <label class="header-navbar__label" for="radio1">Light Theme</label>
+        </div>
+        <div class="header-navbar-radio">
+          <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio2"
+            value="dark">
+          <label class="header-navbar__label" for="radio2">Dark Theme</label>
+        </div>
+        <div class="header-navbar-radio">
+          <input onclick="applyTheme(this.value)" class="header-navbar__input" type="radio" name="theme" id="radio3"
+            value="backendless">
+          <label class="header-navbar__label" for="radio3">Gray Theme</label>
+        </div>
+  
+        <div class="header-navbar-btn">
+          <button onclick="applyTheme(this.value)" value="light">Light Theme</button>
+          <button onclick="applyTheme(this.value)" value="dark">Dark Theme</button>
+          <button onclick="applyTheme(this.value)" value="backendless">Backendless Theme</button>
+        </div>
+  
+        <div class="header-navbar-dropdown">
+          <select name="header-dropdown" id="theme">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="backendless">Backendless Theme</option>
+          </select>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="content">

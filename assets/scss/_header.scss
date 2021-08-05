@@ -3,20 +3,22 @@
   top: 0;
   width: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
   background-color: var(--background-hf-color);
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 3px solid var(--border-hf-color);
   z-index: 1;
 
-  @include sm {
-    flex-wrap: wrap;
-    overflow-x: hidden;
-  }
+  &-content {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
 
-  @extend %container;
+    @include sm {
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
+  }
 
   &-logo {
     display: flex;
@@ -31,14 +33,7 @@
       color: var(--text-color);
       transition: all 0.5s;
       font-size: 1.5rem;
-
-      @include lg-min {
-        font-weight: 300;
-      }
-
-      @include lg {
-        font-weight: 400;
-      }
+      font-weight: 400;
 
       &:hover {
         color: var(--color-accent);

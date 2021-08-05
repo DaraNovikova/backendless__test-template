@@ -9,12 +9,12 @@
   padding-bottom: $gap/2;
   border-top: 3px solid var(--border-hf-color);
 
-  @extend %container;
-
+  
   &-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @extend %container;
 
     @include sm-min {
       width: 100%;
